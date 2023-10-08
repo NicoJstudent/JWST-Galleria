@@ -7,6 +7,11 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
 body {
     background-color: #ffffff;
     color: #000000;
@@ -61,6 +66,24 @@ nav a {
     font-weight: bold;
 }
 
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 8px;
+}
+table th {
+    background-color: #7d0caa;
+    color: #fff;
+}
+table tr:hover {
+    background-color: #999999;
+}
+
+.table_p {
+    text-align: center;
+}
+
 /* Style the main content section */
 main {
     padding: 20px;
@@ -87,6 +110,11 @@ p {
 footer {
     background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.credits {
     text-align: center;
     padding: 10px;
 }
@@ -136,10 +164,35 @@ img {
 }
 
 .prev {
-    left: 10px;
-
+    border-radius: 4px;
+    border: 2px solid #575757;
+    cursor: pointer;
+    left: 200px;
+    position: relative;
+    transition-duration: 0.4s;
+    background-color: #3d3d3d;
+    padding: 16px 30px;
+    color: white;
 }
 
-.next {
-    right: 10px;
+.prev:hover {
+    background-color: #5e5e5e;
+    color: white;
+}
+
+.next { 
+    border-radius: 4px;
+    border: 2px solid #575757;
+    cursor: pointer;
+    position: relative;
+    left: 350px;
+    transition-duration: 0.4s;
+    background-color: #3d3d3d;
+    padding: 16px 42px;
+    color: white;
+}
+
+.next:hover {
+    background-color: #5e5e5e;
+    color: white;
 }
