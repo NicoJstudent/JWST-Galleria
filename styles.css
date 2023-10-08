@@ -1,0 +1,145 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+body.dark-mode {
+    background-color: #3d3c3c;
+    color: #ffffff;
+}
+
+/* Darkmode nappi */
+#dark-mode-toggle {
+    background-color: #2d56a3;
+    border: 2px solid #05070a;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #16098d; 
+    color: white;
+  }
+
+/* Style the header */
+header {
+    background-color: #42004b;
+    background-image: url("images/header_img.jpeg");
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the main content section */
+main {
+    padding: 20px;
+}
+
+/* Style headings and paragraphs */
+h1 {
+    color: #292929;
+}
+
+.mainHeader {
+    color: #a10c68;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Gallerian liukuva kuvasto*/
+.slider-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 100%; /* Each slide takes the full width of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.h_container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: auto 1fr 60px;
+    column-gap: 50px;
+   }
+   
+   
+.h_text {
+     font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+
+}
+
+.next {
+    right: 10px;
+}
