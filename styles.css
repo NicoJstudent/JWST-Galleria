@@ -196,3 +196,11 @@ img {
     background-color: #5e5e5e;
     color: white;
 }
+
+.twitter-timeline {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    transition-duration: 0.4s;
+}
+
