@@ -42,7 +42,7 @@ Tyhjiä kohtia ei ole sisällytetty sivustoon.
 - Toimii monella eri resoluutiolla.
 
 
-4. ** Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)**
+4. **Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)**
 - Gallerian toiminta toteutettu näin
 -  styles.css rivit: 121 - 164
 
