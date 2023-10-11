@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JWST-Galleria</title>
     <meta name="description" content="A brief description of your website">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 <li><a href="galleria.html">Galleria</a></li>
                 <li><a href="historia.html">Historia</a></li>
                 <li><a href="laitteisto.html">Laitteisto</a></li>
-                <li><a href="#">Uutisia</a></li>                
+                <li><a href="uutiset.html">Uutisia</a></li>
                 <li><a href="RSS.html">RSS</a></li>
             </ul>
         </nav>
@@ -29,22 +30,11 @@
 
     <main>
         <section>
-            <h2>Uutisia</h2>
-            <br>
-            <br>
-            <a class="twitter-timeline" 
-               href="https://twitter.com/NASAWebb?ref_src=twsrc%5Etfw" 
-               
-               data-chrome="transparent noborders"
-               data-width="1300"
-               data-height="800"
-               data-tweet-limit="3">Ladataan NASAWebb twiittejä...
-            </a> 
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div id="rss-feed"></div>
         </section>
     </main>
     </div>
-    <script src="scripts\script.js"></script>
+    <script src="scripts\rss.js"></script>
     <footer>
         <p>&copy; 2023 JWST-Galleria</p>
     </footer>

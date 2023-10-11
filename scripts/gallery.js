@@ -10,7 +10,6 @@ const slideWidth = slider.clientWidth;
 darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
-    // Save the user's preference to local storage
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('dark-mode', 'enabled');
     } else {
@@ -18,7 +17,6 @@ darkModeToggle.addEventListener('click', () => {
     }
 });
 
-// Check the user's preference from local storage on page load
 const savedMode = localStorage.getItem('dark-mode');
 if (savedMode === 'enabled') {
     body.classList.add('dark-mode');
@@ -28,6 +26,7 @@ if (savedMode === 'enabled') {
 
 let currentIndex = 0;
 
+//Gallerian next ja prev nappulat
 nextButton.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % slider.children.length;
     updateSliderPosition();

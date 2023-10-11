@@ -11,7 +11,7 @@ if (!visited) {
 darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
-    // Save the user's preference to local storage
+    // Tallentaa vastauksen local storageen, ettei joka sivulla tarvitse erikseen painaa dark modea
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('dark-mode', 'enabled');
     } else {
@@ -19,7 +19,6 @@ darkModeToggle.addEventListener('click', () => {
     }
 });
 
-// Check the user's preference from local storage on page load
 const savedMode = localStorage.getItem('dark-mode');
 if (savedMode === 'enabled') {
     body.classList.add('dark-mode');
